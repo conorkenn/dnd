@@ -17,7 +17,7 @@ func TestInit(t *testing.T) {
 	assert.Equal(t, x.racialTraits, []string{"Extra Language"}, "slices should be equal")
 }
 
-func TestlevelUp(t *testing.T) {
+func TestLevelUp(t *testing.T) {
 	name := "Shocks"
 	x := new(Character)
 	x.init(name, DWARF)
