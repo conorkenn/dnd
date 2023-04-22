@@ -9,7 +9,7 @@ import (
 func main() {
 
 	me := new(character.Character)
-	me.Init("Suel", "gnome")
+	me.Init("Suel", "gnome", "barbarian")
 
 	fmt.Println(*me)
 
