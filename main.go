@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/conorkenn/dnd_go/character"
+)
 
 func main() {
-	hero := new(Character)
-	hero.init("Suel", DRAGONBORN)
 
-	fmt.Println(*hero)
+	me := new(character.Character)
+	me.Init("Suel", "gnome")
 
-	r := roll("1d20")
-	fmt.Println(r)
+	fmt.Println(*me)
+
 }

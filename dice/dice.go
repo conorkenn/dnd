@@ -1,4 +1,4 @@
-package main
+package dice
 
 import (
 	"math/rand"
@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func roll(s string) int {
+func Roll(s string) int {
 	var r = rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	numDice := 1

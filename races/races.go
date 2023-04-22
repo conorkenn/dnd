@@ -1,4 +1,4 @@
-package main
+package races
 
 type Race string
 
@@ -14,7 +14,7 @@ const (
 	TIEFLING   Race = "tiefling"
 )
 
-func generateRacialTraits(r Race) []string {
+func GenerateRacialTraits(r Race) []string {
 	var s []string
 	switch r {
 	case DRAGONBORN:

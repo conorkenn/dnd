@@ -1,4 +1,4 @@
-package main
+package dice
 
 import (
 	"testing"
@@ -7,7 +7,7 @@ import (
 )
 
 func TestRoll(t *testing.T) {
-	r := roll("1d20")
+	r := Roll("1d20")
 	if r > 20 {
 		t.Errorf("roll failed got %v, expected it to be less then %v", r, 20)
 	}
