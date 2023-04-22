@@ -1,16 +1,13 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/conorkenn/dnd_go/character"
 )
 
 func main() {
 
 	me := new(character.Character)
-	me.Init("Suel", "gnome", "barbarian")
-
-	fmt.Println(*me)
+	me.Init("Suel", "human", "barbarian")
+	me.Print()
 
 }
