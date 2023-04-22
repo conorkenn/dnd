@@ -18,8 +18,10 @@ const (
 )
 
 type Class struct {
-	ClassName ClassName
-	HitDie    string
+	ClassName      ClassName
+	HitDie         string
+	PrimaryAbility string
+	Saves          []string
 }
 
 func InitClass(c ClassName) Class {
